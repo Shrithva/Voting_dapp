@@ -1,0 +1,13 @@
+// the commands to be executed in CMD written on order :-
+
+Web3 = require('web3’)
+
+web3 = new Web3("http://localhost:8545")
+
+web3.eth.getAccounts(console.log)
+
+bytecode = fs.readFileSync('Voting_sol_Voting.bin').toString()
+(shrithva) bytecode = fs.readFileSync('filename_sol_Voting.bin').toString()
+
+
+abi = JSON.parse(fs.readFileSync('Voting_sol_Voting.abi').toString())
